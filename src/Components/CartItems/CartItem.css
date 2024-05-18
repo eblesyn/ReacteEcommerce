@@ -1,0 +1,93 @@
+.cartitems{
+    margin: 50px 50px;
+}
+.cartitems hr{
+    height: 3px;
+    background: #40baff;
+    border: 0;
+}
+.cartitems-fm{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    padding: 20px 0px;
+    color: grey;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cartitems-f{
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.cart{
+    height: 65px;
+}
+.cart-remove{
+    width: 15px;
+    margin: 0px 30px;
+    cursor: pointer;
+}
+.cartitems-quantity{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #40baff;
+
+}
+.cartitems-d{
+    display: flex;
+    margin: 100px 0px;
+}
+.cartitems-total{
+flex: 1;
+display: flex;
+flex-direction: column;
+margin-right:200px ;
+gap:40px ;
+}
+.cartbtn {
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cartitems-total-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.cartitems-promo{
+    color: gray;
+}
+.cartitem-promobox{
+    width: 504px;
+    margin-top: 15px;
+    height: 58px;
+}
+.cartitem-promobox input{
+border: none;
+outline: none;
+background: gray;
+font-size: 16px;
+width: 300px;
+height: 45px;
+}
+.cartitem-promobox input::placeholder{
+    padding: 15px;
+    color: rgb(161, 157, 149);
+}
+.cartitem-promobox button{
+    width: 100px;
+    height: 48px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}

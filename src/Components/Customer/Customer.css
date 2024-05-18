@@ -1,0 +1,147 @@
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+  .col-3{
+    padding-left: 120px;
+    padding-right: 100px;
+    margin-top: 40px;
+    text-align: center;
+    flex-basis: 30%;
+}
+img{
+    width: 58.76px;
+height: 70.86px;
+}
+.name{
+    font-family: Poppins;
+font-size: 20px;
+font-weight: 500;
+line-height: 40.5px;
+text-align: center;
+color: #22262A;
+
+}
+.details{
+    
+font-size: 16px;
+font-weight: 400;
+line-height: 21.92px;
+text-align: center;
+line-height: 21.92px;
+color: #22262A;
+
+}
+.latest {
+    margin-top: 50px;
+    margin-bottom: 35px;
+    text-align: center;
+    
+}
+  .latest h3{
+    font-weight: 600;
+    font-size: 25px;
+    color: #22262A;
+    
+}
+ .rows{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    
+}
+.colpics{
+display: flex;
+text-align: left;
+flex-basis: 23%;
+}
+.colpics img{
+    height: 60px;
+    width: 90px;
+    margin-top: 35px;
+        margin-right: 15px;
+        
+}
+.flex{
+    margin-left: 5px;
+}
+.colpics small{
+    color: rgb(173, 168, 168);
+    padding: 0 5px;
+}
+.colpics h3{
+    font-size: 20px;
+    
+    color: #223263;
+}
+.colpics p{
+     
+font-size: 16px;
+font-weight: 400;
+padding-bottom:45px ;
+color: #22262A;
+}
+.featured{
+    margin-top: 50px;
+    margin-bottom: 35px;
+    text-align: center;
+    
+}
+  .featured h3{
+    font-weight: 600;
+    font-size: 25px;
+    color: #22262A;
+    
+}
+ .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+ }
+ .featured h4{
+    font-size:18px ;
+ }
+ .featured img{
+    width: 130px;
+    height: 120px;
+    margin-top: 30px;
+    color: #262626;
+ }
+ .featured .flex{
+    margin-top: 30px;
+ }
+ .featured p{
+    color: #FF4858;
+ }
+ .featured p span{
+    color: #C1C8CE;
+    text-decoration: line-through;
+    font-size: 14px;
+ }
+ .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 90px;
+ }
+ .input input{
+    height: 45px;
+    width: 450px;
+    border: 2px solid #BCDDFE;
+ }
+ .input input::placeholder{
+    padding-left: 15px;
+ }
+ .input button{
+    background-color: #40BFFF;
+    outline:none ;
+    border: none;
+    width: 100px;
+    color: white;
+    height:45px ;
+    font-size: 14px;
+ }

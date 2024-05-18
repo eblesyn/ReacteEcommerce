@@ -1,0 +1,27 @@
+.relateditem{
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+       overflow-x: hidden;
+        row-gap: 15px;  
+        text-align: center;
+       
+}
+.relatedpd h1{
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 505px;
+    margin-top: 150px;
+    color: #22262A;
+
+}
+.relatedpd hr{
+    background:#40baff;
+height: 3px;
+width: 75px;
+outline: none;
+border: none;
+border-radius: 10px;
+margin-top: 1px;
+margin-bottom: 25px;
+margin-left:600px ;
+}

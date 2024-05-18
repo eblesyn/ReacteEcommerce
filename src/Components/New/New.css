@@ -1,0 +1,18 @@
+.news{
+    width: 100%;
+    background: #F6F7F8;
+}
+
+.new{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-left: 450px;
+    margin-bottom: 20px;
+    
+
+}
