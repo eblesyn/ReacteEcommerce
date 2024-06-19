@@ -4,7 +4,7 @@ import "./RelatedProduct.css"
 import React from 'react'
 import { data } from '../Data/Info'
 import Items from '../Items/Items'
-import { bestsellers, productData } from "../static/data"
+
 
 const RealtedProduct = () => {
   return (

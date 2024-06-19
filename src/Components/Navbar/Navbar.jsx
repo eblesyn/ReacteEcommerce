@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import footer from "../Assets/FOOTER.png";
 import { Link } from "react-router-dom";
@@ -8,74 +8,49 @@ import { ShopContext } from "../Context/ShopContext";
 const Navbar = () => {
   const [nav, setNav] = useState("home");
   const { getTotalCartItems } = useContext(ShopContext);
-  const cartItems = JSON.parse(localStorage.getItem("cartItems"))
+  const cartItems = JSON.parse(localStorage.getItem("cartItems")) || []; // Handle null case
 
   return (
     <div className="navbar">
       <div className="nav-container">
         <div className="nav-logo">
-          <img src={footer} alt="" />
+        <Link to="/" onClick={() => setNav("home")}>
+        <img src={footer} alt="Logo" />
+              </Link>
+        
         </div>
         <div className="nav-list">
           <ul>
-            <li
-              onClick={() => {
-                setNav("home");
-              }}
-            >
-              <Link style={{ textDecoration: "none" }} to="/">
-                {" "}
-                HOME{" "}
+            <li className={nav === "home" ? "active" : ""}>
+              <Link to="/" onClick={() => setNav("home")}>
+                HOME
               </Link>
-              {nav === "home" ? <hr /> : <></>}{" "}
             </li>
-            <li
-              onClick={() => {
-                setNav("bags");
-              }}
-            >
-              {" "}
-              <Link style={{ textDecoration: "none" }} to="/bags">
-                {" "}
-                BAGS{" "}
+            <li className={nav === "bags" ? "active" : ""}>
+              <Link to="/bags" onClick={() => setNav("bags")}>
+                BAGS
               </Link>
-              {nav === "bags" ? <hr /> : <></>}
             </li>
-            <li
-              onClick={() => {
-                setNav("sneakers");
-              }}
-            >
-              {" "}
-              <Link style={{ textDecoration: "none" }} to="/sneakers">
-                SNEAKERS{" "}
+            <li className={nav === "sneakers" ? "active" : ""}>
+              <Link to="/sneakers" onClick={() => setNav("sneakers")}>
+                SNEAKERS
               </Link>
-              {nav === "sneakers" ? <hr /> : <></>}
             </li>
-            <li
-              onClick={() => {
-                setNav("belts");
-              }}
-            >
-              {" "}
-              <Link style={{ textDecoration: "none" }} to="/belts">
-                BELTS{" "}
+            <li className={nav === "belts" ? "active" : ""}>
+              <Link to="/belts" onClick={() => setNav("belts")}>
+                BELTS
               </Link>
-              {nav === "belts" ? <hr /> : <></>}
             </li>
           </ul>
         </div>
         <div className="nav-cart">
-          <Link style={{ textDecoration: "none" }} to="/login">
-            <button>Login</button>{" "}
+          <Link to="/login">
+            <button>Login</button>
           </Link>
-          <Link style={{ textDecoration: "none" }} to="cart">
-            <img src={cart} alt="" />
+          <Link to="/cart" className="cart-link">
+            <img src={cart} alt="Cart" />
+            <div className="nav-cart-count"><p> {cartItems.length}</p></div>
           </Link>
-
-          <div className="nav-cart-count">
-            <p>{cartItems?.length}</p>
-          </div>
         </div>
       </div>
     </div>
